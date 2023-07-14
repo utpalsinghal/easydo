@@ -1,16 +1,31 @@
 import { faSquarePlus } from "@fortawesome/free-regular-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React from "react";
+import React, { useState } from "react";
 
-const CreateTodo = () => {
+const CreateTodo = ({ addTodo }) => {
+	const [newTodo, setNewTodo] = useState("");
+
+	const handleAdd = () => {
+		addTodo(newTodo);
+		setNewTodo("");
+	};
+
+	const handleKeyUp = (e) => {
+		if (e.key === "Enter") {
+			handleAdd();
+		}
+	};
+
 	return (
 		<>
-			<h1>Your future starts here!</h1>
 			<input
 				type='text'
 				placeholder='Next task? Bring on the excitement!'
-			></input>
-			<FontAwesomeIcon icon={faSquarePlus} />
+				onChange={(e) => setNewTodo(e.target.value)}
+				value={newTodo}
+				onKeyUp={handleKeyUp}
+			/>
+			<FontAwesomeIcon icon={faSquarePlus} onClick={handleAdd} />
 		</>
 	);
 };

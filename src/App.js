@@ -1,12 +1,10 @@
 import "./App.css";
-import CreateTodo from "./components/CreateTodo";
-import TodoList from "./components/TodoList";
+import TodoWrapper from "./components/TodoWrapper";
 
 function App() {
 	return (
 		<div>
-			<CreateTodo />
-      <TodoList />
+			<TodoWrapper />
 		</div>
 	);
 }
