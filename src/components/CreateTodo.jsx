@@ -1,13 +1,19 @@
 import { faSquarePlus } from "@fortawesome/free-regular-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 
 const CreateTodo = ({ addTodo }) => {
 	const [newTodo, setNewTodo] = useState("");
+	const inputRef = useRef(null);
+
+	useEffect(() => {
+		inputRef.current.focus();
+	}, []);
 
 	const handleAdd = () => {
 		addTodo(newTodo);
 		setNewTodo("");
+		inputRef.current.focus();
 	};
 
 	const handleKeyUp = (e) => {
@@ -24,6 +30,7 @@ const CreateTodo = ({ addTodo }) => {
 				onChange={(e) => setNewTodo(e.target.value)}
 				value={newTodo}
 				onKeyUp={handleKeyUp}
+				ref={inputRef}
 			/>
 			<FontAwesomeIcon icon={faSquarePlus} onClick={handleAdd} />
 		</>
