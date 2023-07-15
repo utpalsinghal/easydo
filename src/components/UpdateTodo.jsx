@@ -15,6 +15,8 @@ const UpdateTodo = ({ currentTodo, editTodo }) => {
 	const handleKeyUp = (e) => {
 		if (e.key === "Enter") {
 			handleEdit();
+		} else if(e.key === "Escape") {
+			editTodo(currentTodo.id, currentTodo.task);
 		}
 	};
 	const handleClickingOutside = () => {
