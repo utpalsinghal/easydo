@@ -42,17 +42,19 @@ const TodoWrapper = () => {
 	};
 
 	return (
-		<>
-			<h1>Your future starts here!</h1>
-			<CreateTodo addTodo={addTodo} />
-			<TodoList
-				todos={todos}
-				toggleComplete={toggleComplete}
-				deleteTodo={deleteTodo}
-				editTodo={editTodo}
-				enableEdit={enableEdit}
-			/>
-		</>
+		<div className='wrapper'>
+			<h1 className='tagline'>Your future starts here!</h1>
+			<div className='todo-form'>
+				<CreateTodo addTodo={addTodo} />
+				<TodoList
+					todos={todos}
+					toggleComplete={toggleComplete}
+					deleteTodo={deleteTodo}
+					editTodo={editTodo}
+					enableEdit={enableEdit}
+				/>
+			</div>
+		</div>
 	);
 };
 

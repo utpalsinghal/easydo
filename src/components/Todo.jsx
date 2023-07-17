@@ -14,24 +14,28 @@ const Todo = ({ todo, toggleComplete, deleteTodo, enableEdit }) => {
 	};
 
 	return (
-		<div>
+		<div className='todo'>
 			<input
 				type='checkbox'
 				onChange={checkboxChange}
 				checked={todo.isComplete}
 			/>
-			<span>{todo.task}</span>
+			<span className={'task'+(todo.isComplete ? " todo-complete" : "")}>
+				{todo.task}
+			</span>
 			{!todo.isComplete && (
 				<FontAwesomeIcon
 					icon={faPenToSquare}
 					style={{ color: "#0f7b79" }}
 					onClick={handleEditButton}
+          className="edit-btn"
 				/>
 			)}
 			<FontAwesomeIcon
 				icon={faTrashCan}
 				style={{ color: "#0f7b79" }}
 				onClick={handleDelete}
+        className="del-btn"
 			/>
 		</div>
 	);

@@ -1,4 +1,4 @@
-import { faSquarePlus } from "@fortawesome/free-regular-svg-icons";
+import { faPlus } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useEffect, useRef, useState } from "react";
 
@@ -23,7 +23,7 @@ const CreateTodo = ({ addTodo }) => {
 	};
 
 	return (
-		<>
+		<div className="todo todo-input">
 			<input
 				type='text'
 				placeholder='Next task? Bring on the excitement!'
@@ -32,8 +32,13 @@ const CreateTodo = ({ addTodo }) => {
 				onKeyUp={handleKeyUp}
 				ref={inputRef}
 			/>
-			<FontAwesomeIcon icon={faSquarePlus} onClick={handleAdd} />
-		</>
+			<FontAwesomeIcon
+				icon={faPlus}
+				style={{ color: "#0f7b79" }}
+				onClick={handleAdd}
+				className="add-btn"
+			/>
+		</div>
 	);
 };
 

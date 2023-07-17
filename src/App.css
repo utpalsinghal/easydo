@@ -1,38 +1,78 @@
-.App {
-  text-align: center;
+body {
+	background-color: #fdeded;
+	color: #120203;
+	padding: 5% 20%;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@media screen and (max-width: 450px) {
+	body {
+		padding: 5%;
+	}
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@media screen and (max-width: 768px) {
+	body {
+		padding: 5% 10%;
+	}
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@media screen and (min-width: 1440px) {
+	body {
+		padding: 5% 30%;
+	}
 }
-
-.App-link {
-  color: #61dafb;
+.wrapper {
+	background-color: #0f7b79;
+	min-height: 85vh;
+	padding: 2vw;
+	margin: 0 auto;
+	border-radius: 20px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.tagline {
+	margin: 0 0 10px 0;
+}
+.todo {
+	/* border: 1px solid #f9d2d2; */
+	border-radius: 15px;
+	background-color: #f9d2d2;
+	display: flex;
+	margin: 6px 0 6px 0;
+	height: 25px;
+}
+.todo input[type="text"] {
+	border: none;
+	background-color: #fdeded;
+	color: #120203;
+	width: 100%;
+}
+.todo-input,
+.todo-update {
+	background-color: #fdeded;
+	padding-left: 12px;
+	padding-right: 5px;
+}
+.todo input[type="text"]:focus {
+	outline: none;
+}
+.todo input[type="checkbox"] {
+	margin: 3px 5px 3px 10px;
+}
+span.task {
+  width: 100%;
+}
+span.task.todo-complete {
+	opacity: 0.5;
+	text-decoration: line-through;
+}
+.todo svg {
+	cursor: pointer;
+}
+.add-btn {
+	height: 17px;
+	margin: 4px 6px;
+}
+.edit-btn {
+	height: 15px;
+	margin: 5px 6px;
+}
+.del-btn {
+	height: 15px;
+	margin: 5px 10px 5px 0;
 }

@@ -24,7 +24,7 @@ const UpdateTodo = ({ currentTodo, editTodo }) => {
 	};
 
 	return (
-		<>
+		<div className='todo todo-update'>
 			<input
 				type='text'
 				placeholder="Task update: What's the haps?"
@@ -34,8 +34,13 @@ const UpdateTodo = ({ currentTodo, editTodo }) => {
 				onBlur={handleClickingOutside}
 				ref={inputRef}
 			/>
-			<FontAwesomeIcon icon={faCircleCheck} onClick={handleEdit} />
-		</>
+			<FontAwesomeIcon
+				icon={faCircleCheck}
+				onClick={handleEdit}
+				style={{ color: "#0f7b79" }}
+				className="add-btn"
+			/>
+		</div>
 	);
 };
 

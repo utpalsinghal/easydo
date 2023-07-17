@@ -10,7 +10,7 @@ const TodoList = ({
 	enableEdit,
 }) => {
 	return (
-		<div>
+		<>
 			{todos.map((todo) =>
 				todo.isEditing ? (
 					<UpdateTodo currentTodo={todo} editTodo={editTodo} />
@@ -23,7 +23,7 @@ const TodoList = ({
 					/>
 				)
 			)}
-		</div>
+		</>
 	);
 };
 
