@@ -22,11 +22,17 @@ const Todo = ({ todo, toggleComplete, deleteTodo, enableEdit }) => {
 			/>
 			<span>{todo.task}</span>
 			{!todo.isComplete && (
-				<>
-					<FontAwesomeIcon icon={faPenToSquare} onClick={handleEditButton} />
-					<FontAwesomeIcon icon={faTrashCan} onClick={handleDelete} />
-				</>
+				<FontAwesomeIcon
+					icon={faPenToSquare}
+					style={{ color: "#0f7b79" }}
+					onClick={handleEditButton}
+				/>
 			)}
+			<FontAwesomeIcon
+				icon={faTrashCan}
+				style={{ color: "#0f7b79" }}
+				onClick={handleDelete}
+			/>
 		</div>
 	);
 };
