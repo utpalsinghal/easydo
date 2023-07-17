@@ -34,7 +34,7 @@ body {
 	background-color: #f9d2d2;
 	display: flex;
 	margin: 6px 0 6px 0;
-	height: 25px;
+	min-height: 25px;
 }
 .todo input[type="text"] {
 	border: none;
