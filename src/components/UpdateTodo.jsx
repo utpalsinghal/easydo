@@ -1,4 +1,4 @@
-import { faCircleCheck } from "@fortawesome/free-regular-svg-icons";
+import { faCheck } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useEffect, useRef, useState } from "react";
 
@@ -20,7 +20,7 @@ const UpdateTodo = ({ currentTodo, editTodo }) => {
 		}
 	};
 	const handleClickingOutside = () => {
-		editTodo(currentTodo.id, currentTodo.task);
+		editTodo(currentTodo.id, newTodo);
 	};
 
 	return (
@@ -35,7 +35,7 @@ const UpdateTodo = ({ currentTodo, editTodo }) => {
 				ref={inputRef}
 			/>
 			<FontAwesomeIcon
-				icon={faCircleCheck}
+				icon={faCheck}
 				onClick={handleEdit}
 				className="add-btn"
 			/>
