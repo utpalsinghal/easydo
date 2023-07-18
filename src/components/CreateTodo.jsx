@@ -34,7 +34,6 @@ const CreateTodo = ({ addTodo }) => {
 			/>
 			<FontAwesomeIcon
 				icon={faPlus}
-				style={{ color: "#0f7b79" }}
 				onClick={handleAdd}
 				className="add-btn"
 			/>

@@ -4,7 +4,7 @@ import TodoList from "./TodoList";
 import { v4 as uuidv4 } from "uuid";
 
 const TodoWrapper = () => {
-	const [todos, setTodos] = useState([]);
+	const [todos, setTodos] = useState([{ id: uuidv4(), task: 'Add your first task!', isComplete: false, isEditing: false }]);
 	const [totalTodoCount, setTotalTodoCount] = useState(0);
 	const [completeTodoCount, setCompleteTodoCount] = useState(0);
 

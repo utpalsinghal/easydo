@@ -33,14 +33,12 @@ const Todo = ({ todo, toggleComplete, deleteTodo, enableEdit }) => {
 			{!todo.isComplete && (
 				<FontAwesomeIcon
 					icon={faPenToSquare}
-					style={{ color: "#0f7b79" }}
 					onClick={handleEditButton}
 					className='edit-btn'
 				/>
 			)}
 			<FontAwesomeIcon
 				icon={faTrashCan}
-				style={{ color: "#0f7b79" }}
 				onClick={handleDelete}
 				className='del-btn'
 				shake={isDeleteHovering ? true : false}

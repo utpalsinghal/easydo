@@ -1,30 +1,26 @@
 body {
-	background-color: #fdeded;
-	color: #120203;
-	padding: 5% 20%;
+	background-color: #eeede7;
+	color: #060604;
+	padding: 0% 20%;
 }
 @media screen and (max-width: 450px) {
 	body {
-		padding: 5%;
+		padding: 0%;
 	}
 }
 @media screen and (max-width: 768px) {
 	body {
-		padding: 5% 10%;
+		padding: 0% 10%;
 	}
 }
 @media screen and (min-width: 1440px) {
 	body {
-		padding: 5% 30%;
+		padding: 0% 25%;
 	}
 }
 .wrapper {
-	background-color: #0f7b79;
-	min-height: 85vh;
 	padding: 2vw;
 	margin: 0 auto;
-	border-radius: 20px;
-	box-shadow: 0 0 30px #88a1a0;
 }
 .tagline {
 	margin: 0 0 5px 0;
@@ -37,22 +33,23 @@ body {
 	text-align: center;
 }
 .todo {
-	/* border: 1px solid #f9d2d2; */
 	border-radius: 15px;
-	background-color: #f9d2d2;
+	background-color: #313245;
+	color: #eeede7;
 	display: flex;
 	margin: 6px 0 6px 0;
 	min-height: 25px;
 }
 .todo input[type="text"] {
 	border: none;
-	background-color: #fdeded;
-	color: #120203;
+	background-color: inherit;
+	color: #060604;
 	width: 100%;
 }
 .todo-input,
 .todo-update {
-	background-color: #fdeded;
+	background-color: #d8c9d9;
+	color: #05252e;
 	padding-left: 12px;
 	padding-right: 5px;
 }
@@ -83,4 +80,11 @@ span.task.todo-complete {
 .del-btn {
 	height: 15px;
 	margin: 5px 10px 5px 0;
+}
+.add-btn {
+	color: #313245;
+}
+.del-btn,
+.edit-btn {
+	color: #e9e1ea;
 }

@@ -37,7 +37,6 @@ const UpdateTodo = ({ currentTodo, editTodo }) => {
 			<FontAwesomeIcon
 				icon={faCircleCheck}
 				onClick={handleEdit}
-				style={{ color: "#0f7b79" }}
 				className="add-btn"
 			/>
 		</div>
