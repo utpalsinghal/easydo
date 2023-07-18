@@ -1,21 +1,21 @@
 body {
 	background-color: #eeede7;
 	color: #060604;
-	padding: 0% 20%;
+	padding: 0% 20% 45px;
 }
 @media screen and (max-width: 450px) {
 	body {
-		padding: 0%;
+		padding: 0% 0% 45px;
 	}
 }
 @media screen and (max-width: 768px) {
 	body {
-		padding: 0% 10%;
+		padding: 0% 10% 45px;
 	}
 }
 @media screen and (min-width: 1440px) {
 	body {
-		padding: 0% 25%;
+		padding: 0% 25% 45px;
 	}
 }
 .wrapper {
@@ -88,3 +88,34 @@ span.task.todo-complete {
 .edit-btn {
 	color: #e9e1ea;
 }
+
+/* Footer styling start */
+.footer {
+	background-color: #d8c9d9;
+	color: #05252e;
+	box-shadow: 0 5px 25px #797579;
+	/* background-color: #6b6e94;
+	color: #e9e1ea; */
+	position: fixed;
+	display: flex;
+	bottom: 0;
+	left: 0;
+	width: calc(100% - 20px);
+	height: 25px;
+	padding: 10px;
+}
+.footnote {
+	margin: 0 10px;
+	height: 100%;
+	width: 100%;
+}
+.social-links {
+	display: flex;
+	margin: 0 10px;
+}
+.social-links svg {
+	height: 100%;
+	margin-left: 10px;
+	color: #313245;
+}
+/* Footer styling end */
