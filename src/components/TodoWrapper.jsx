@@ -11,7 +11,7 @@ const TodoWrapper = () => {
 	useEffect(() => {
 		setTotalTodoCount(todos.length);
 		let completeCount = 0;
-		todos.map((todo) => {
+		todos.forEach((todo) => {
 			if (todo.isComplete === true) {
 				completeCount++;
 			}
