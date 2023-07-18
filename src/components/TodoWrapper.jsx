@@ -1,10 +1,23 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import CreateTodo from "./CreateTodo";
 import TodoList from "./TodoList";
 import { v4 as uuidv4 } from "uuid";
 
 const TodoWrapper = () => {
 	const [todos, setTodos] = useState([]);
+	const [totalTodoCount, setTotalTodoCount] = useState(0);
+	const [completeTodoCount, setCompleteTodoCount] = useState(0);
+
+	useEffect(() => {
+		setTotalTodoCount(todos.length);
+		let completeCount = 0;
+		todos.map((todo) => {
+			if (todo.isComplete === true) {
+				completeCount++;
+			}
+		});
+		setCompleteTodoCount(completeCount);
+	}, [todos]);
 
 	const addTodo = (todo) => {
 		if (validateTask(todo)) {
@@ -48,14 +61,21 @@ const TodoWrapper = () => {
 	const validateTask = (task) => {
 		if (task === "" || task === null || task === undefined) {
 			alert("The task value cannot be empty!");
-      return false;
+			return false;
 		}
-    return true;
+		return true;
 	};
 
 	return (
 		<div className='wrapper'>
 			<h1 className='tagline'>Your future starts here!</h1>
+			<p className='counter'>
+				{completeTodoCount === totalTodoCount && totalTodoCount !== 0
+					? "Wuhoo! All tasks completed."
+					: totalTodoCount === 0
+					? "Add a new task to start"
+					: `${completeTodoCount}/${totalTodoCount} tasks completed`}
+			</p>
 			<div className='todo-form'>
 				<CreateTodo addTodo={addTodo} />
 				<TodoList
