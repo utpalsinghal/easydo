@@ -1,21 +1,21 @@
 body {
 	background-color: #eeede7;
 	color: #060604;
-	padding: 0% 20% 45px;
+	padding: 45px 20%;
 }
 @media screen and (max-width: 450px) {
 	body {
-		padding: 0% 0% 45px;
+		padding: 45px 0%;
 	}
 }
 @media screen and (max-width: 768px) {
 	body {
-		padding: 0% 10% 45px;
+		padding: 45px 10%;
 	}
 }
 @media screen and (min-width: 1440px) {
 	body {
-		padding: 0% 25% 45px;
+		padding: 45px 25%;
 	}
 }
 .wrapper {
@@ -93,7 +93,7 @@ span.task.todo-complete {
 .footer {
 	background-color: #d8c9d9;
 	color: #05252e;
-	box-shadow: 0 5px 25px #797579;
+	box-shadow: 0 10px 20px #797579;
 	/* background-color: #6b6e94;
 	color: #e9e1ea; */
 	position: fixed;
@@ -119,3 +119,23 @@ span.task.todo-complete {
 	color: #313245;
 }
 /* Footer styling end */
+
+/* Header styling start */
+.header {
+	background-color: #313245;
+	color: #eeede7;
+	box-shadow: 0 -10px 20px #313245;
+	position: absolute;
+	display: flex;
+	top: 0;
+	left: 0;
+	width: calc(100% - 20px);
+	height: 25px;
+	padding: 10px;
+}
+.title {
+	margin: 0 10px;
+	height: 100%;
+	width: 100%;
+}
+/* Header styling end */
