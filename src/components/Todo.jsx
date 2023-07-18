@@ -8,17 +8,19 @@ const Todo = ({ todo, toggleComplete, deleteTodo, enableEdit }) => {
 		toggleComplete(todo.id);
 	};
 	const handleDelete = () => {
-		deleteTodo(todo.id);
+		if (window.confirm(`Click 'OK' to confirm deleting the below task:\n"${todo.task}"`)) {
+			deleteTodo(todo.id);
+		}
 	};
 	const handleEditButton = () => {
 		enableEdit(todo.id);
 	};
-  const handleMouseOver = () => {
-    setIsDeleteHovering(true);
-  }
-  const handleMouseOut = () => {
-    setIsDeleteHovering(false);
-  }
+	const handleMouseOver = () => {
+		setIsDeleteHovering(true);
+	};
+	const handleMouseOut = () => {
+		setIsDeleteHovering(false);
+	};
 
 	return (
 		<div className='todo'>
