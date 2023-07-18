@@ -7,10 +7,12 @@ const TodoWrapper = () => {
 	const [todos, setTodos] = useState([]);
 
 	const addTodo = (todo) => {
-		setTodos([
-			...todos,
-			{ id: uuidv4(), task: todo, isComplete: false, isEditing: false },
-		]);
+		if (validateTask(todo)) {
+			setTodos([
+				...todos,
+				{ id: uuidv4(), task: todo, isComplete: false, isEditing: false },
+			]);
+		}
 	};
 
 	const toggleComplete = (id) => {
@@ -34,11 +36,21 @@ const TodoWrapper = () => {
 	};
 
 	const editTodo = (id, value) => {
-		setTodos(
-			todos.map((todo) =>
-				todo.id === id ? { ...todo, task: value, isEditing: false } : todo
-			)
-		);
+		if (validateTask(value)) {
+			setTodos(
+				todos.map((todo) =>
+					todo.id === id ? { ...todo, task: value, isEditing: false } : todo
+				)
+			);
+		}
+	};
+
+	const validateTask = (task) => {
+		if (task === "" || task === null || task === undefined) {
+			alert("The task value cannot be empty!");
+      return false;
+		}
+    return true;
 	};
 
 	return (
