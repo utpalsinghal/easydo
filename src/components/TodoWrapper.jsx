@@ -68,7 +68,7 @@ const TodoWrapper = () => {
 
 	return (
 		<div className='wrapper'>
-			<h1 className='tagline'>Your future starts here!</h1>
+			<h1 className='tagline'>Do it Easy!</h1>
 			<p className='counter'>
 				{completeTodoCount === totalTodoCount && totalTodoCount !== 0
 					? "Wuhoo! All tasks completed."
