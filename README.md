@@ -4,12 +4,12 @@ EasyDo is a simple and intuitive ReactJS-based Todo app that allows users to man
 
 ## Features 
 
-- Add tasks: Easily add new tasks to your todo list.
+- Add tasks: Easily add new tasks to your to-do list.
 - Mark tasks as completed: Keep track of completed tasks by marking them as done.
 - Modify tasks: Edit the content of existing tasks to update or correct information.
 - Delete tasks: Remove tasks from the list when they are no longer needed.
 - View all the pending tasks at the top as completed tasks automatically move to the bottom of the list.
-- Track completed tasks count: Keep a track of the number of total tasks and the completed tasks at the top of the page.
+- Track completed tasks count: Keep track of the number of total tasks and the completed tasks at the top of the page.
 
 ## Getting started
 
@@ -24,7 +24,7 @@ Ensure you have the following installed on your machine:
 
 ### Installation
 
-1. Clone the repository to your local machine.
+1. Clone the repository to your local machine:
   `https://github.com/utpalsinghal/easydo.git`
 
 2. Navigate to the project directory.
@@ -44,7 +44,7 @@ You should see the EasyDo - A Todo app interface.
 
 ## Usage
 
-- To add new task, simply open the page and start typing and press enter. Alternatively, you can press the '+' symbol to add the task.
+- To add a new task, simply open the page and start typing and press enter. Alternatively, you can press the '+' symbol to add the task.
 - To mark a task as completed, click on the checkbox next to the task.
 - To modify a task, click on the "Edit" icon, make the necessary changes, and press enter or click the tick button.
 - To discard a new modification, press the 'ESC' key on your keyboard.
