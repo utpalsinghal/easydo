@@ -1,70 +1,67 @@
-# Getting Started with Create React App
+# EasyDo - A Todo app
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+EasyDo is a simple and intuitive ReactJS-based Todo app that allows users to manage their tasks efficiently. With EasyDo, users can add various tasks, mark them as completed, and even delete or modify them as needed.
 
-## Available Scripts
+## Features 
 
-In the project directory, you can run:
+- Add tasks: Easily add new tasks to your todo list.
+- Mark tasks as completed: Keep track of completed tasks by marking them as done.
+- Modify tasks: Edit the content of existing tasks to update or correct information.
+- Delete tasks: Remove tasks from the list when they are no longer needed.
+- View all the pending tasks at the top as completed tasks automatically move to the bottom of the list.
+- Track completed tasks count: Keep a track of the number of total tasks and the completed tasks at the top of the page.
 
-### `npm start`
+## Getting started
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Follow the instructions below to set up and run the EasyDo Todo App locally on your machine.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Prerequisites
 
-### `npm test`
+Ensure you have the following installed on your machine:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Node.js (https://nodejs.org)
+- npm (Node Package Manager, comes with Node.js)
 
-### `npm run build`
+### Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Clone the repository to your local machine.
+  `https://github.com/utpalsinghal/easydo.git`
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. Navigate to the project directory.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. Install the required dependencies:
+  `npm install`
 
-### `npm run eject`
+### Running the app
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. Start the development server:
+  `npm start`
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+2. The app should now be running locally. Open your web browser and visit:
+  `http://localhost:3000`
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+You should see the EasyDo - A Todo app interface.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Usage
 
-## Learn More
+- To add new task, simply open the page and start typing and press enter. Alternatively, you can press the '+' symbol to add the task.
+- To mark a task as completed, click on the checkbox next to the task.
+- To modify a task, click on the "Edit" icon, make the necessary changes, and press enter or click the tick button.
+- To discard a new modification, press the 'ESC' key on your keyboard.
+- To delete a task, click on the "Dustbin" icon next to the task.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Contributing
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Contributions are welcome! If you'd like to enhance 'EasyDo - A Todo App' or fix any issues, please follow these steps:
 
-### Code Splitting
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Make your changes and commit them with descriptive messages.
+4. Push your changes to your forked repository.
+5. Create a pull request to the 'main' branch of the original repository.
+6. We'll review your contribution and merge it if it aligns with the project's goals.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Acknowledgments
+Thanks to the ReactJS community for providing the tools and resources that made building EasyDo - A Todo App possible.
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Happy task organizing with EasyDo! 🚀
