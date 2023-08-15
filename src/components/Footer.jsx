@@ -17,7 +17,7 @@ const Footer = () => {
 				<a href="https://github.com/utpalsinghal" target="_blank">
 					<FontAwesomeIcon icon={faGithub} />
 				</a>
-				<a href="" /*target="_blank"*/ onClick={()=>{alert("Website in-progress")}}>
+				<a href="https://utpalsinghal.vercel.app/" target="_blank" >
 					<FontAwesomeIcon icon={faLink} />
 				</a>
 			</div>
